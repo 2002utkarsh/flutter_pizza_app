@@ -1,3 +1,4 @@
+import 'package:user_repo/src/models/model.dart';
 
 class MyUserEntity{
   String userId;

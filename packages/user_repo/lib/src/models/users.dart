@@ -1,9 +1,11 @@
+import "package:user_repo/src/entities/entities.dart";
+
 
 class MyUser{
   String userId;
   String email;
   String name;
-  String password;
+  String? password;
   bool hasActiveCart;
 
   MyUser({
@@ -22,10 +24,10 @@ class MyUser{
 
   MyUserEntity toEntity(){
     return MyUserEntity{
-    userId: userId, 
-    email: email,
-    name: name, 
-    hasActiveCart: hasActiveCart,
+      userId: userId, 
+      email: email,
+      name: name, 
+      hasActiveCart: hasActiveCart,
     };
   }
 
